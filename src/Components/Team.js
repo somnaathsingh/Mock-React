@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import './Team.css'; // Import the CSS file
+import './Team.css'; 
+import Header from './Header';// Import the CSS file
 import teamMember1 from './team-member1.jpg'; // Import team member 1 image
 import teamMember2 from './team-member2.jpg'; // Import team member 2 image
 import teamMember3 from './team-member3.jpg'; // Import team member 3 image
@@ -40,6 +41,8 @@ const Team = () => {
   };
 
   return (
+    <div>
+      <Header />
     <div className="content">
       <h2>Our Team</h2>
       <div className="team-members">
@@ -59,6 +62,7 @@ const Team = () => {
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 };
